@@ -1,0 +1,16 @@
+@mixin font-face($font-name, $path, $weight: normal, $style: normal, $option: fallback) {
+  @font-face {
+    font-family: quote($font-name);
+    src:
+      url(#{$path}.woff2) format("woff2"),
+      url(#{$path}.woff) format("woff"),
+      url(#{$path}.ttf) format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: $option;
+  }
+}
+
+@include font-face('Open Sans', '../fonts/opensans/opensans/opensans', 400, 'normal', 'fallback');
+@include font-face('Open Sans', '../fonts/opensans/opensanslight/opensanslight', 300, 'normal', 'fallback');
+@include font-face('Open Sans', '../fonts/opensans/opensansbold/opensansbold', 600, 'normal', 'fallback');

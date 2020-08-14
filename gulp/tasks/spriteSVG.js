@@ -29,5 +29,5 @@ module.exports = function spriteSVG() {
         }
       }
     }))
-    .pipe(gulp.dest('build/static/images/sprite'));
+    .pipe(gulp.dest('build/images/sprite'));
 };

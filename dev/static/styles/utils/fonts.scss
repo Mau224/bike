@@ -11,6 +11,6 @@
   }
 }
 
-@include font-face('Open Sans', '../fonts/opensans/opensans/opensans', 400, 'normal', 'fallback');
-@include font-face('Open Sans', '../fonts/opensans/opensanslight/opensanslight', 300, 'normal', 'fallback');
-@include font-face('Open Sans', '../fonts/opensans/opensansbold/opensansbold', 600, 'normal', 'fallback');
+@include font-face("Open Sans", "../fonts/opensans/opensans/opensans", 400, "normal", "fallback");
+@include font-face("Open Sans", "../fonts/opensans/opensanslight/opensanslight", 300, "normal", "fallback");
+@include font-face("Open Sans", "../fonts/opensans/opensansbold/opensansbold", 600, "normal", "fallback");

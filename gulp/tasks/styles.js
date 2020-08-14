@@ -30,5 +30,5 @@ module.exports = function styles() {
       .pipe(csso())
       .pipe(rename("styles.min.css"))
       .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest('build/static/css'))
+    .pipe(gulp.dest('build/css'))
 };

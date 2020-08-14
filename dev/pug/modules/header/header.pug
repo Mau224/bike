@@ -3,30 +3,34 @@ header
         .header__container
             .header__body
                 a.header__logo-block
-                    +icon("logo")
+
                 .header__burger
                     span
                 nav.header__menu
-                    .header__list
-                        a(class="header__link" href='#adva') О нас
-                        a(class="header__link" href='#type') Виды велосипедов
-                        a(class="header__link" href='#video') Видео про велосипеды
-                        a(class="header__link" href='#map') Контакты
+                    ul.header__list
+                        li.header__item
+                            a(class="header__link" href='#advantages') О нас
+                        li.header__item
+                            a(class="header__link" href='#type') Виды велосипедов
+                        li.header__item
+                            a(class="header__link" href='#video') Видео про велосипеды
+                        li.header__item
+                            a(class="header__link" href='#map') Контакты
     .header-content
-        .header-content__container
-            .header-content__text-block
-                .header-content__logo-block
+        .header-content__text-block
+            a.header-content__logo-block
+                .header-content__logo-item.adaptive-item
                     +icon("logo")
-                .header-content__text
-                     h1 Мы продаем велосипеды
-                     p Наш магазин отбирает только самые лучшие велосипеды для продажи
-            .header-content__form-block
-                h2 Заполните поля ниже и мы подберем велосипед Вашей мечты
-                form(class="header-content__form", method="post")#commentform
-                    label(for="name" aria-label="name-user")
-                    input(class="header-content__input header-content__input--name", type="text", name="name", id="name", placeholder="Введите Ваше Имя", title="Введите Имя", minlength="2", maxlength="30" required)
-                    label(for="tel" aria-label="phone-number")
-                    input(class="header-content__input", type="tel", name="tel", id="tel", placeholder="Введите Ваш номер телефона", title="Введите телефон", minlength="1", maxlength="12" required)
-                    button(type="submit" class="header-content__btn-sub header-btn") Подобрать велосипед мечты
+            .header-content__text
+                 h1 Мы продаем велосипеды
+                 p Наш магазин отбирает только самые лучшие велосипеды для продажи
+        .header-content__form-block
+            p Заполните поля ниже и мы подберем велосипед Вашей мечты
+            form(class="header-content__form", method="post")#commentform
+                label(for="name" aria-label="name-user")
+                input(type="text", name="name", id="name", placeholder="Введите Ваше Имя", title="Введите Имя", minlength="2", maxlength="30" required)
+                label(for="tel" aria-label="phone-number")
+                input(type="tel", name="tel", id="tel", placeholder="Введите Ваш номер телефона", title="Введите телефон", minlength="1", maxlength="12" required)
+                button(type="submit" class="header-content__btn-sub header-btn") Подобрать велосипед мечты
 
 

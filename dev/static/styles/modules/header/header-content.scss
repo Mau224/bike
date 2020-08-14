@@ -1,7 +1,3 @@
-.header-content__container {
-  display: flex;
-}
-
 .header-content__text-block h1 {
   font-family: $fontfamali;
   font-style: normal;
@@ -9,7 +5,6 @@
   font-size: 46px;
   line-height: 64px;
   color: #ffffff;
-  margin-top: 36px;
   margin-bottom: 23px;
 }
 
@@ -23,7 +18,7 @@
   max-width: 381px;
 }
 
-.header-content__form-block h2 {
+.header-content__form-block p {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -36,11 +31,11 @@
 }
 
 .header-content {
-  margin: 311px auto 0;
+  margin: 0 auto;
   max-width: 878px;
   display: flex;
-  flex-direction: column;
   width: 100%;
+  padding-bottom: 240px;
 }
 
 .header-content__form-block {
@@ -59,7 +54,7 @@
   max-width: 327px;
 }
 
-.header-content__input {
+.header-content__form-block input {
   margin-bottom: 20px;
   border-radius: 4px;
   padding: 9px;
@@ -81,6 +76,10 @@
   :focus {
     border: 1px solid #0ad9c6;
   }
+}
+
+.header-content__logo-item {
+  margin-bottom: 34px;
 }
 
 .header-content__btn-sub {
@@ -105,6 +104,10 @@
 @media (max-width: $tablet-width) {
   .header-content__text-block img {
     display: none;
+  }
+
+  .header-content__logo-item {
+    margin-bottom: 0;
   }
 
   .header-content__form-block {
@@ -144,12 +147,12 @@
     flex-direction: column;
   }
 
-  .header-content__input {
+  .header-content__form-block input {
     border: 1px solid #c9ccd4;
     padding: 12px 9px 9px 18px;
   }
 
-  .header-content__form-block h2 {
+  .header-content__form-block p {
     width: 100%;
     //max-width: 320px;
     color: #000000;
@@ -158,32 +161,29 @@
     margin: 6px 8px 31px 0;
   }
 
-  .header-content {
-    margin-top: 135px;
-  }
+  //.header-content__logo-block {
+  //  display: none;
+  //}
 
-  .header-content__logo-block {
-    display: none;
+  .header-content {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .header-content {
-    margin-top: 120px;
-  }
-
   .header-content__form-block {
     margin-left: 16px;
     margin-right: 16px;
     left: 0;
   }
 
-  .header-content__form-block h2 {
+  .header-content__form-block p {
     margin: 6px 0 19px 0;
     font-size: 19px;
   }
 
-  .header-content__input {
+  .header-content__form-block input {
     padding: 12px 9px 9px 24px;
   }
 

@@ -10,5 +10,5 @@ module.exports = function script() {
   return gulp.src('dev/static/js/*.js')
     .pipe(gulpif(argv.prod, uglify()))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('build/static/js/'));
+    .pipe(gulp.dest('build/js/'));
 };

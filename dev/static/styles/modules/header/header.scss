@@ -1,13 +1,11 @@
 header {
-  background: url("../../static/images/content/bg-bike.jpg");
+  background: url("../images/content/bg-bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   //height: 825px;
-  padding-bottom: 240px;
-  margin-bottom: 150px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../static/images/content/bg-bike@2x.jpg");
+    background-image: url("../images/content/bg-bike@2x.jpg");
   }
 }
 
@@ -17,8 +15,7 @@ header {
   width: 100%;
   max-width: 900px;
   justify-content: center;
-  margin: 0 auto;
-  padding-top: 20px;
+  margin: 0 auto 248px;
 }
 
 .header__list {
@@ -28,6 +25,7 @@ header {
   align-items: center;
   z-index: 2;
   padding: 0 0 10px 33px;
+  padding-top: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   //&::before {
@@ -55,6 +53,7 @@ header {
   line-height: 32px;
   text-align: center;
   opacity: 0.7;
+  display: inline-block;
 
   &:hover {
     color: #0ad9c6;
@@ -62,7 +61,7 @@ header {
 }
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -71,7 +70,7 @@ header {
 
 .header::before {
   content: "";
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -95,8 +94,10 @@ header {
   display: none;
 }
 
-.header__logo-block {
-  display: none;
+.header__item {
+  width: auto;
+  margin-bottom: 0;
+  background: none;
 }
 
 @media (max-width: $tablet-width) {
@@ -104,21 +105,28 @@ header {
     overflow: hidden;
   }
 
+  .header__item {
+    width: 100%;
+    background: #ececec;
+    margin-bottom: 31px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+  }
+
   header {
-    background: url("../../static/images/content/bg-tab-bike.jpg");
+    background: url("../images/content/bg-tab-bike.jpg");
     background-repeat: no-repeat;
     background-size: 100%, 340px;
     height: 340px;
     padding-bottom: 0;
-    margin-bottom: 414px;
+    margin-bottom: 350px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../static/images/content/bg-tab-bike@2x.jpg");
+      background-image: url("../images/content/bg-tab-bike@2x.jpg");
     }
   }
 
   .header__logo-block {
-    display: block;
     margin-left: 20px;
     margin-top: 17px;
   }
@@ -209,6 +217,7 @@ header {
   .header__container {
     max-width: none;
     padding-top: 0;
+    margin-bottom: 85px;
   }
 
   .header__menu.active {
@@ -226,10 +235,6 @@ header {
   .header__list a {
     width: 100%;
     text-align: left;
-    background: #ececec;
-    margin-bottom: 31px;
-    padding-top: 13px;
-    padding-bottom: 17px;
     padding-left: 16px;
     color: #000000;
     opacity: 1;
@@ -243,7 +248,7 @@ header {
       position: absolute;
       width: 30px;
       height: 17px;
-      background: url("../../static/images/content/mini-arrow.svg");
+      background: url("../images/content/mini-arrow.svg");
       background-repeat: no-repeat;
       right: 0;
       margin-top: 10px;
@@ -253,25 +258,29 @@ header {
 
 @media (max-width: $mobile-width) {
   header {
-    background: url("../../static/images/content/bg-mob-bike.jpg");
+    background: url("../images/content/bg-mob-bike.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 350px;
     height: 390px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../static/images/content/bg-mob-bike@2x.jpg");
+      background-image: url("../images/content/bg-mob-bike@2x.jpg");
     }
   }
 
   .header__logo-block {
     margin-left: 17px;
   }
+
+  .header__container {
+    margin-bottom: 70px;
+  }
 }
 
 
 @media (max-width: 410px) {
   header {
-    margin-bottom: 432px;
+    margin-bottom: 362px;
   }
 }

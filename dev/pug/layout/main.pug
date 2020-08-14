@@ -6,16 +6,19 @@ html(lang="ru-RU")
 	head
 		meta(charset="utf-8")
 		title #{title}
+		<!--[if IE]>
 		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
 		meta(name="viewport" content="width=device-width,initial-scale=1")
-		meta(name="keywords" content="")
-		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
-		link(rel="preload" href="/static/fonts/opensans/opensans/opensans.woff2" as="font" crossorigin="anonymous")
-		link(rel="preload" href="/static/fonts/opensans/opensansbold/opensansbold.woff2" as="font" crossorigin="anonymous")
-		link(rel="shortcut icon" href="/static/images/common/favicon-32x32.png" type="image/png")
+		meta(name="description" content="Page content")
+		link(rel="stylesheet" type='text/css' href="css/styles.min.css")
+		link(rel="preload" href="fonts/opensans/opensans/opensans.woff2" as="font" crossorigin="anonymous")
+		link(rel="preload" href="fonts/opensans/opensansbold/opensansbold.woff2" as="font" crossorigin="anonymous")
+		link(rel="shortcut icon" href="images/common/favicon-32x32.png" type="image/png")
 	body
 		.wrapper
 			include ../modules/header/header
 			block content
-		script(src="static/js/vendors.js")
-		script(src="static/js/main.js")
+			include ../modules/footer/footer
+		script(src="js/vendors.js")
+		script(src="js/main.js")

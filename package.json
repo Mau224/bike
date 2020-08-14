@@ -60,6 +60,8 @@
     "jquery": "^3.5.1",
     "jquery-mask-plugin": "^1.14.16",
     "normalize.css": "^8.0.1",
-    "svg4everybody": "^2.1.9"
+    "picturefill": "^3.0.3",
+    "svg4everybody": "^2.1.9",
+    "svgxuse": "^1.2.6"
   }
 }

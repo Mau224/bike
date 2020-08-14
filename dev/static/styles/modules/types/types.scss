@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.types h1 {
+.types h2 {
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -15,9 +15,12 @@
   line-height: 30px;
   margin-bottom: 60px;
   margin-left: -8px;
-  padding-top: 152px;
   letter-spacing: -0.005em;
   color: #1f1f1f;
+}
+
+.types__block-item img {
+  margin-bottom: 20px;
 }
 
 .types__block-item {
@@ -34,7 +37,8 @@
     height: 47px;
     top: -18px;
     left: -17px;
-    background: url("../../static/images/content/square.svg") no-repeat;
+    border: #0ad9c6 solid 8px;
+    //border-radius: 50%;
   }
 
   &--center::after {
@@ -44,7 +48,7 @@
     height: 47px;
     right: -22px;
     bottom: 33px;
-    background: url("../../static/images/content/square.svg") no-repeat;
+    border: #0ad9c6 solid 8px;
   }
 
   &--last::before {
@@ -54,7 +58,8 @@
     height: 95px;
     top: -34px;
     right: -37px;
-    background: url("../../static/images/content/circle-min.svg") no-repeat;
+    border: #0ad9c6 solid 16px;
+    border-radius: 50%;
   }
 
   &--first::before {
@@ -64,7 +69,8 @@
     height: 180px;
     top: 24%;
     left: -56px;
-    background: url("../../static/images/content/circle.svg") no-repeat;
+    border: #0ad9c6 solid 28px;
+    border-radius: 50%;
     z-index: 4;
   }
 
@@ -91,7 +97,6 @@
   line-height: 34px;
   color: #000000;
   text-align: center;
-  margin-top: 20px;
   margin-left: 3px;
   max-width: 340px;
 }
@@ -100,8 +105,8 @@
 .types {
   background: #f6f7f9;
   padding-bottom: 147px;
-  margin-top: 150px;
   position: relative;
+  padding-top: 152px;
 }
 
 @media (max-width: 1284px) {
@@ -167,9 +172,10 @@
       position: absolute;
       width: 127px;
       height: 127px;
-      top: 57%;
+      top: 55%;
       left: -38px;
-      background: url("../../static/images/content/circle-tab.svg") no-repeat;
+      border: #0ad9c6 solid 18px;
+      border-radius: 50%;
       z-index: 4;
     }
 
@@ -185,14 +191,14 @@
   .types {
     margin-top: 0;
     padding-bottom: 70px;
+    padding-top: 52px;
   }
 
-  .types h1 {
+  .types h2 {
     font-weight: 600;
     font-size: 23px;
     margin-left: 3px;
     line-height: 41px;
-    padding-top: 52px;
     margin-bottom: 30px;
   }
 }
@@ -220,7 +226,8 @@
       height: 68px;
       top: -24px;
       right: -22px;
-      background: url("../../static/images/content/circle-min-tab.svg") no-repeat;
+      border: #0ad9c6 solid 13px;
+      border-radius: 50%;
     }
 
     &--first {

@@ -4,5 +4,5 @@ const gulp = require('gulp');
 
 module.exports = function fonts() {
   return gulp.src('dev/static/fonts/**/*.{woff2,woff}')
-    .pipe(gulp.dest('build/static/fonts'))
+    .pipe(gulp.dest('build/fonts'))
 };

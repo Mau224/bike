@@ -1,5 +1,3 @@
-'use strict';
-
 $(document).ready(function() {
     $('.header__burger').click(function(event) {
         $('.header__burger,.header__menu,.header__body').toggleClass('active');
@@ -14,7 +12,7 @@ $(document).ready(function(){
     });
 });
 
-$('.header-content__input--name').on('input', function() {
+$('#name').on('input', function() {
     $(this).val($(this).val().replace(/^[ 0-9]+$/, ''))
 });
 

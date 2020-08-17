@@ -5,6 +5,7 @@
 .video {
   position: relative;
   height: 100%;
+  padding-bottom: 76px;
 }
 
 .video__block h2 {
@@ -129,6 +130,10 @@
 
   .video__wrapper {
     background-image: linear-gradient(to top, #ffffff 17%, #000000 10%);
+  }
+
+  .video {
+    padding-bottom: 33px;
   }
 }
 

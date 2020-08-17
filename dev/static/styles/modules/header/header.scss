@@ -2,6 +2,7 @@ header {
   background: url("../images/content/bg-bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 240px;
   //height: 825px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -15,7 +16,7 @@ header {
   width: 100%;
   max-width: 900px;
   justify-content: center;
-  margin: 0 auto 248px;
+  margin: 0 auto;
 }
 
 .header__list {
@@ -66,6 +67,7 @@ header {
   top: 0;
   left: 0;
   z-index: 500;
+  margin: 0 auto 248px;
 }
 
 .header::before {
@@ -217,7 +219,6 @@ header {
   .header__container {
     max-width: none;
     padding-top: 0;
-    margin-bottom: 85px;
   }
 
   .header__menu.active {
@@ -254,6 +255,10 @@ header {
       margin-top: 10px;
     }
   }
+
+  .header {
+    margin-bottom: 51px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -273,8 +278,8 @@ header {
     margin-left: 17px;
   }
 
-  .header__container {
-    margin-bottom: 70px;
+  .header {
+    margin-bottom: 37px;
   }
 }
 

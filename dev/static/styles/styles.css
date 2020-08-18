@@ -856,6 +856,10 @@ header {
     display: none;
   }
 
+  .header-content__logo-block {
+    display: none;
+  }
+
   .header-content__logo-item {
     margin-bottom: 0;
   }

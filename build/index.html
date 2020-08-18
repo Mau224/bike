@@ -14,13 +14,13 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="header">
+        <div class="header no-js">
           <div class="header__container">
             <div class="header__body">
-              <div class="header__logo-block"></div>
-              <div class="header__burger"><span></span></div>
-              <nav class="header__menu">
-                <ul class="header__list">
+              <div class="header__logo-block no-js"></div>
+              <div class="header__burger no-js"><span></span></div>
+              <nav class="header__menu no-js">
+                <ul class="header__list no-js">
                   <li class="header__item"><a class="header__link" href="#advantages">О нас</a></li>
                   <li class="header__item"><a class="header__link" href="#type">Виды велосипедов</a></li>
                   <li class="header__item"><a class="header__link" href="#video">Видео про велосипеды</a></li>
@@ -111,6 +111,7 @@
               <h2>Видео про велосипеды</h2>
               <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
               <div class="video__content-block">
+                <button class="video__btn" tabindex="0"></button>
                 <picture>
                   <source type="image/webp" media="(min-width: 1024px)" srcset="images/content/bike-video.webp 1x, images/content/bike-video@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 767px)" srcset="images/content/bike-video-mob.webp 1x, images/content/bike-video-mob@2x.webp 2x">
@@ -136,7 +137,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer class="footer">
         <div class="footer__container"><a class="footer__link footer__link--mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru
             <svg class="svg-sprite-icon icon-mail">
               <use xlink:href="images/sprite/symbol/sprite.svg#mail"></use>

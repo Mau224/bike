@@ -38,35 +38,31 @@
   padding-top: 121px;
 }
 
-
-.video__content-block {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    top: 44%;
-    left: 46.5%;
-    border-radius: 50%;
-    background-color: #0ad9c6;
-    z-index: 1000;
-  }
+.video__btn {
+  width: 65px;
+  height: 65px;
+  top: 44%;
+  left: 46.5%;
+  border-radius: 50%;
+  background-color: #0ad9c6;
+  z-index: 1000;
+  cursor: pointer;
+  position: absolute;
 
   &::after {
     content: "";
     position: absolute;
     width: 13px;
     height: 18.2px;
-    top: 48.5%;
-    left: 49.5%;
+    top: 39.5%;
+    left: 41.5%;
     border: 9px solid transparent;
     border-left: 14px solid #000000;
     z-index: 1000;
+    cursor: pointer;
   }
 
-  &:hover::before {
+  &:hover {
     background-color: gray;
   }
 
@@ -74,6 +70,20 @@
     border: 9px solid transparent;
     border-left: 14px solid #ffffff;
   }
+
+  &:focus::before {
+    background-color: gray;
+  }
+
+  &:focus::after {
+    border: 9px solid transparent;
+    border-left: 14px solid #ffffff;
+  }
+}
+
+.video__content-block {
+  position: relative;
+  tab-index: 0;
 
   img {
     position: relative;
@@ -112,21 +122,20 @@
     height: 282px;
   }
 
-  .video__content-block {
-    &::before {
-      width: 90px;
-      height: 90px;
-      top: 34%;
-      left: 41%;
-    }
+  .video__btn {
+    width: 90px;
+    height: 90px;
+    top: 34%;
+    left: 41%;
 
     &::after {
-      top: 46%;
-      left: 49%;
+      top: 39%;
+      left: 47%;
       border: 11px solid transparent;
       border-left: 16px solid #000000;
     }
   }
+
 
   .video__wrapper {
     background-image: linear-gradient(to top, #ffffff 17%, #000000 10%);
@@ -143,17 +152,15 @@
     height: 161.66px;
   }
 
-  .video__content-block {
-    &::before {
-      left: 39%;
-      top: 31%;
-      width: 65px;
-      height: 65px;
-    }
+  .video__btn {
+    left: 39%;
+    top: 29.5%;
+    width: 65px;
+    height: 65px;
 
     &::after {
-      top: 45.5%;
-      left: 48.5%;
+      top: 38.5%;
+      left: 45.5%;
       border: 9px solid transparent;
       border-left: 14px solid #000000;
     }

@@ -29,6 +29,14 @@ move();
 
 
 $(document).ready(function() {
+    $(".header").removeClass("no-js");
+    $(".header__burger").removeClass("no-js");
+    $(".header__logo-block").removeClass("no-js");
+    $(".header__menu").removeClass("no-js");
+    $(".header__list").removeClass("no-js");
+});
+
+$(document).ready(function() {
     $('.header__burger').click(function(event) {
         $('.header__burger,.header__menu,.header__body').toggleClass('active');
         $('body').toggleClass('lock');

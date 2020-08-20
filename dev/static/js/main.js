@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".header").removeClass("no-js");
+    $(".header_main").removeClass("no-js");
     $(".header__burger").removeClass("no-js");
     $(".header__logo-block").removeClass("no-js");
     $(".header__menu").removeClass("no-js");

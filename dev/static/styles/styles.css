@@ -453,7 +453,7 @@ template {
     margin-left: 50px;
   }
 }
-header {
+.header {
   background: url("../images/content/bg-bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -461,7 +461,7 @@ header {
   background-color: #000000;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  header {
+  .header {
     background-image: url("../images/content/bg-bike@2x.jpg");
   }
 }
@@ -506,7 +506,7 @@ header {
   color: #0ad9c6;
 }
 
-.header {
+.header__main {
   position: relative;
   width: 100%;
   top: 0;
@@ -515,7 +515,7 @@ header {
   margin: 0 auto 248px;
 }
 
-.header::before {
+.header__main::before {
   content: "";
   position: relative;
   top: 0;
@@ -560,7 +560,7 @@ header {
     padding-bottom: 17px;
   }
 
-  header {
+  .header {
     background: url("../images/content/bg-tab-bike.jpg");
     background-repeat: no-repeat;
     background-size: 100%, 340px;
@@ -570,7 +570,7 @@ header {
   }
 }
 @media (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  header {
+  .header {
     background-image: url("../images/content/bg-tab-bike@2x.jpg");
   }
 }
@@ -770,12 +770,12 @@ header {
   }
 }
 @media (max-width: 1023px) {
-  .header {
+  .header__main {
     margin-bottom: 85px;
   }
 }
 @media (max-width: 767px) {
-  header {
+  .header {
     background: url("../images/content/bg-mob-bike.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -784,7 +784,7 @@ header {
   }
 }
 @media (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  header {
+  .header {
     background-image: url("../images/content/bg-mob-bike@2x.jpg");
   }
 }
@@ -794,7 +794,7 @@ header {
   }
 }
 @media (max-width: 767px) {
-  .header {
+  .header__main {
     margin-bottom: 70px;
   }
 }
@@ -1125,10 +1125,6 @@ textarea {
   resize: none;
 }
 
-section {
-  position: relative;
-}
-
 input,
 select,
 button {
@@ -1215,9 +1211,6 @@ button::-moz-focus-inner {
   .advantages__item:last-child {
     margin-top: 20px;
   }
-  .advantages__item:nth-child(2) {
-    margin-right: 15px;
-  }
 
   .advantages__list {
     flex-wrap: wrap;
@@ -1252,11 +1245,11 @@ button::-moz-focus-inner {
     margin-right: 30px;
     margin-bottom: 42px;
   }
-  .advantages__item:nth-child(2) {
-    margin: 0;
-  }
   .advantages__item:last-child {
     margin: 0;
+  }
+  .advantages__item--second {
+    margin-right: 0;
   }
 
   .advantages {
@@ -1278,15 +1271,15 @@ button::-moz-focus-inner {
   .advantages__item:last-child {
     margin-bottom: 0;
   }
-  .advantages__item:nth-child(2) {
+  .advantages__item--second {
     margin-bottom: 53px;
   }
-  .advantages__item:nth-child(3) {
+  .advantages__item--third {
     margin-bottom: 53px;
   }
 
   .advantages {
-    padding-top: 70px;
+    padding-top: 82px;
     padding-bottom: 79px;
   }
 
@@ -1299,6 +1292,7 @@ button::-moz-focus-inner {
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 290px;
   }
 

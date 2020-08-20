@@ -69,10 +69,6 @@
     &:last-child {
       margin-top: 20px;
     }
-
-    &:nth-child(2) {
-      margin-right: 15px;
-    }
   }
 
   .advantages__list {
@@ -109,12 +105,12 @@
     margin-right: 30px;
     margin-bottom: 42px;
 
-    &:nth-child(2) {
+    &:last-child {
       margin: 0;
     }
 
-    &:last-child {
-      margin: 0;
+    &--second {
+      margin-right: 0;
     }
   }
 
@@ -139,17 +135,17 @@
       margin-bottom: 0;
     }
 
-    &:nth-child(2) {
+    &--second {
       margin-bottom: 53px;
     }
 
-    &:nth-child(3) {
+    &--third {
       margin-bottom: 53px;
     }
   }
 
   .advantages {
-    padding-top: 70px;
+    padding-top: 82px;
     padding-bottom: 79px;
   }
 
@@ -163,6 +159,7 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 290px;
   }
 

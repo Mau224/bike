@@ -1,4 +1,4 @@
-header {
+.header {
   background: url("../images/content/bg-bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +63,7 @@ header {
   }
 }
 
-.header {
+.header__main {
   position: relative;
   width: 100%;
   top: 0;
@@ -72,7 +72,7 @@ header {
   margin: 0 auto 248px;
 }
 
-.header::before {
+.header__main::before {
   content: "";
   position: relative;
   top: 0;
@@ -117,7 +117,7 @@ header {
     padding-bottom: 17px;
   }
 
-  header {
+  .header {
     background: url("../images/content/bg-tab-bike.jpg");
     background-repeat: no-repeat;
     background-size: 100%, 340px;
@@ -306,13 +306,13 @@ header {
     }
   }
 
-  .header {
+  .header__main {
     margin-bottom: 85px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  header {
+  .header {
     background: url("../images/content/bg-mob-bike.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,7 +328,7 @@ header {
     margin-left: 17px;
   }
 
-  .header {
+  .header__main {
     margin-bottom: 70px;
   }
 

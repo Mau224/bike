@@ -1,16 +1,16 @@
 'use strict';
 
 //Объявляем переменные
-const parent_original = document.querySelector('.header-content__logo-block');
-const parent = document.querySelector('.header__logo-block');
-const item = document.querySelector('.adaptive-item');
+var parent_original = document.querySelector('.header-content__logo-block');
+var parent = document.querySelector('.header__logo-block');
+var item = document.querySelector('.adaptive-item');
 
 //Слушаем изменение размера экрана
 window.addEventListener('resize', move);
 
 //Функция
 function move(){
-	const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	var viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	if (viewport_width <= 1024) {
 		if (!item.classList.contains('done')) {
 			parent.insertBefore(item, parent.children[2]);

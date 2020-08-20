@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp --prod",
-    "style:lint": "stylelint ./dev/static/styles/**/*.scss --syntax scss",
+    "test": "stylelint ./dev/static/styles/**/*.scss --syntax scss",
     "style:fix": "stylelint './dev/static/styles/**/*.scss' --syntax scss --fix"
   },
   "author": "Даниил",
